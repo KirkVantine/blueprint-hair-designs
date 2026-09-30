@@ -5,4 +5,4 @@ Concept site for Blueprint Hair Designs (April Pengelly), men's and women's hair
 Live preview: https://kirkvantine.github.io/blueprint-hair-designs/
 
 Static HTML, no build step. Booking links go to April's Square Appointments page.
-Haircut illustrations are inline SVG line drawings in the blueprint style; April's photo is in img/april.webp.
+All photos in img/ are April's own, taken from the uploads on her current Square Online site.
