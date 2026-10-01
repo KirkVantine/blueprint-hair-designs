@@ -2,7 +2,7 @@
 // Only what's listed here ships; tools/, README, share.html and .git stay local.
 import { cpSync, rmSync, mkdirSync } from 'node:fs';
 
-const files = ['index.html', 'favicon.svg', 'apple-touch-icon.png', 'robots.txt', 'sitemap.xml', '_headers'];
+const files = ['index.html', '404.html', '_redirects', 'favicon.svg', 'apple-touch-icon.png', 'robots.txt', 'sitemap.xml', '_headers'];
 const dirs = ['img', 'fonts'];
 
 rmSync('dist', { recursive: true, force: true });

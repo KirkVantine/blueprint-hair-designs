@@ -124,7 +124,7 @@ a{color:inherit}
 .hero-lede strong{color:var(--chalk);font-weight:600}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero-note{margin:28px 0 0;font-size:15px;color:var(--chalk-dim)}
-.hero-note a{color:var(--chalk)}
+.hero-note a{color:var(--chalk);white-space:nowrap}
 
 /* the drawing: guides draw in, then the photo "prints" */
 .plate{position:relative;margin:0;justify-self:end;width:100%;max-width:380px}
@@ -161,7 +161,7 @@ a{color:inherit}
 
 @media (max-width:920px){
   .hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px;gap:48px}
-  .plate{max-width:340px;justify-self:start;margin-left:30px}
+  .plate{width:calc(100% - 30px);max-width:340px;justify-self:start;margin-left:30px}
 }
 
 /* ---------- sections ---------- */
