@@ -5,10 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blueprint Hair Designs | Men's &amp; Women's Haircuts in Dexter, MI</title>
 <meta name="description" content="Precision men's and women's haircuts by April Pengelly at Blueprint Hair Designs, 7971 Ann Arbor Street, Dexter, Michigan. Book online, call, or text 734-579-5095.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://www.blueprinthairdesigns.com/">
+<meta name="theme-color" content="#21375D">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blueprint Hair Designs">
+<meta property="og:title" content="Blueprint Hair Designs | Men's &amp; Women's Haircuts in Dexter, MI">
+<meta property="og:description" content="Men's and women's haircuts by April Pengelly on Ann Arbor Street in downtown Dexter. Book online, call, or text 734-579-5095.">
+<meta property="og:url" content="https://www.blueprinthairdesigns.com/">
+<meta property="og:image" content="https://www.blueprinthairdesigns.com/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Blueprint Hair Designs",
+  "url": "https://www.blueprinthairdesigns.com/",
+  "image": "https://www.blueprinthairdesigns.com/img/og-card.png",
+  "logo": "https://www.blueprinthairdesigns.com/img/logo.jpg",
+  "telephone": "+1-734-579-5095",
+  "slogan": "Let's build something awesome!",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7971 Ann Arbor Street",
+    "addressLocality": "Dexter",
+    "addressRegion": "MI",
+    "postalCode": "48130",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 42.33679, "longitude": -83.88694 },
+  "founder": { "@type": "Person", "name": "April Pengelly" },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://book.squareup.com/appointments/y822tu8pvoxt6f/location/LP72SN72PNQF9/services"
+  }
+}
+</script>
 <style>
+/* fonts: self-hosted, latin subset. Archivo is variable (weight + width); Montserrat is static (wordmark only). */
+@font-face{font-family:"Archivo";font-style:normal;font-weight:300 900;font-stretch:62% 125%;font-display:swap;src:url(/fonts/archivo-latin.woff2) format("woff2")}
+@font-face{font-family:"Archivo";font-style:italic;font-weight:300 900;font-stretch:62% 125%;font-display:swap;src:url(/fonts/archivo-italic-latin.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/montserrat-600-static.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/montserrat-800-static.woff2) format("woff2")}
 :root{
   --ink:#2C5179;        /* logo blueprint blue */
   --ink-deep:#21375D;   /* logo edge vignette */
@@ -55,8 +97,9 @@ a{color:inherit}
 .site-head .wrap{display:flex;align-items:center;gap:32px;min-height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
 .wordmark{display:flex;flex-direction:column;align-items:center;font-family:"Montserrat","Archivo",sans-serif;text-transform:uppercase;line-height:1}
-.wm-top{font-weight:800;font-size:25px;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.1px var(--chalk)}
-@supports not (-webkit-text-stroke:1px #000){.wm-top{color:var(--chalk)}}
+.wm-top{position:relative;z-index:0;font-weight:800;font-size:25px;letter-spacing:.02em;color:var(--ink-deep)}
+.wm-top::before{content:attr(data-t);position:absolute;left:0;top:0;z-index:-1;color:transparent;-webkit-text-stroke:2.4px var(--chalk)}
+@supports not (-webkit-text-stroke:1px #000){.wm-top{color:var(--chalk)}.wm-top::before{content:none}}
 .wm-sub{font-weight:600;font-size:11.5px;letter-spacing:.24em;margin-top:4px;color:var(--sky);padding-left:.24em}
 .nav{display:flex;gap:28px}
 .nav a{text-decoration:none;font-size:15px;color:var(--chalk-dim);padding:10px 0;border-bottom:1.5px solid transparent}
@@ -244,7 +287,7 @@ form.signup label{display:block;font-weight:600;font-size:15px;margin-bottom:8px
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Blueprint Hair Designs, home">
-      <span class="wordmark"><span class="wm-top">Blueprint</span><span class="wm-sub">Hair Designs</span></span>
+      <span class="wordmark"><span class="wm-top" data-t="Blueprint">Blueprint</span><span class="wm-sub">Hair Designs</span></span>
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#cuts">Haircuts</a>
@@ -399,13 +442,15 @@ form.signup label{display:block;font-weight:600;font-size:15px;margin-bottom:8px
       <div class="panel">
         <h2>Stay in the loop</h2>
         <p>Get the latest when you sign up for our newsletter: openings, seasonal hair tips, and studio news.</p>
-        <form class="signup" id="signup" novalidate>
+        <!-- Posts to April's Square Marketing list (embed code from her Square Dashboard). Square shows its own confirmation in a new tab. -->
+        <form class="signup" id="signup" action="https://squareup.com/outreach/CDTruy/subscribe" method="POST" target="_blank" novalidate>
+          <input type="hidden" name="embed" value="true">
           <label for="email">Email address</label>
           <div class="field-row">
-            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-help" placeholder="you@example.com">
+            <input id="email" name="email_address" type="email" required autocomplete="email" inputmode="email" aria-describedby="email-help" placeholder="you@example.com">
             <button class="btn btn-ink" type="submit">Sign up</button>
           </div>
-          <p class="help" id="email-help">Unsubscribe anytime. Protected by reCAPTCHA.</p>
+          <p class="help" id="email-help">Unsubscribe anytime. Square confirms your signup in a new tab.</p>
         </form>
       </div>
       <div class="panel alt gift">
@@ -450,13 +495,14 @@ form.signup label{display:block;font-weight:600;font-size:15px;margin-bottom:8px
   const plate = document.getElementById('plate');
   if (!matchMedia('(prefers-reduced-motion: reduce)').matches) plate.classList.add('drawn');
 
-  // Newsletter (preview only; will post to the Square Online form on launch)
+  // Newsletter: check the address here, then let the form POST to April's Square Marketing list.
+  // Square opens its own confirmation in a new tab; this page swaps the form for a thank-you.
   const form = document.getElementById('signup');
   form.addEventListener('submit', e => {
-    e.preventDefault();
-    const input = form.email;
+    const input = form.elements.email_address;
     form.querySelector('.err')?.remove();
     if (!input.value.trim() || !input.checkValidity()) {
+      e.preventDefault();
       input.setAttribute('aria-invalid', 'true');
       const p = document.createElement('p');
       p.className = 'err'; p.id = 'email-err'; p.setAttribute('role', 'alert');
@@ -466,10 +512,12 @@ form.signup label{display:block;font-weight:600;font-size:15px;margin-bottom:8px
       input.focus();
       return;
     }
-    const ok = document.createElement('div');
-    ok.className = 'ok'; ok.setAttribute('role', 'status');
-    ok.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>You\'re signed up. Watch your inbox for the next update from Blueprint.</span>';
-    form.replaceWith(ok);
+    setTimeout(() => {
+      const ok = document.createElement('div');
+      ok.className = 'ok'; ok.setAttribute('role', 'status');
+      ok.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Thanks for signing up. Square opened a confirmation in a new tab.</span>';
+      form.replaceWith(ok);
+    }, 0);
   });
 
   document.getElementById('yr').textContent = new Date().getFullYear();
