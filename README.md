@@ -14,7 +14,10 @@ Live: https://www.blueprinthairdesigns.com/
 ## Where things come from
 - Booking buttons: April's Square Appointments page.
 - Newsletter: posts to April's Square Marketing list (`squareup.com/outreach/CDTruy/subscribe`, embed code from her Square Dashboard).
-- Photos in `img/`: April's own, taken from the uploads on her old Square Online site; `april.webp` supplied by April. Logo: `img/logo.jpg` from her Square site.
+- Photos in `img/`: April's own. Gallery and cut photos from the uploads on her old Square Online site; `april.webp` supplied by April. Hero (`april-sign.jpg`), `studio.jpg`, `massage-room.jpg` and the Hayley and Cheyenne team photos from her Facebook page (originals in `../source-images/facebook`). Logo: `img/logo.jpg`.
+- Prices: copied from her Square Appointments page on 2026-10-02. Update `#prices` if she changes them in Square.
+- Team: Hayley Bautell (stylist, Wed and Sat from Oct 2026) and Cheyenne Tanner (deep tissue massage, $90/hr), from her Facebook posts.
+- Facebook: https://www.facebook.com/profile.php?id=61586577883358
 - Share card `img/og-card.png` and `apple-touch-icon.png` are rendered from `tools/og-card.html` and `tools/touch-icon.html` (headless Edge screenshot).
 
 ## DNS
